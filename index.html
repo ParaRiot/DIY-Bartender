@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
 </head>
 <body>
     <header class="jumbotron text-center">
         <h1>DIY Bartender</h1>
     </header>
-    <div class="container-fluid item-search" style="height: 100%;">
-        <div class="row ">
-            <div class="col-4 search-container">
-                <h2 class="child search-input">Search for a City:</h2>
-                <input id="search-results" class="child" placeholder="Example: Drink Name"></input>
-                <button type="submit" class="child btn btn-primary" id="fetch-button">Submit</button>
+    <div class="container item-search" style="height: 100%;">
+        <div class="">
+            <div class="search-container">
+                <h2 class="search-input">Search for a City:</h2>
+                <input id="search-results" placeholder="Example: Drink Name"></input>
+                <button type="submit" class="btn btn-primary" id="fetch-button">Submit</button>
             </div>
-            <div class="col-8 results-container">
+            <div class="results-container">
                 <div>
-                    <div class="row child">
+                    <div class="">
                         <div id="search-results">Search Results</div>
                     </div>
-                    <div class="row child result-box-container">
+                    <div class="row result-box-container">
                         <div class="item result-box" id="result-one"></div>
                         <div class="item result-box" id="result-two"></div>
                         <div class="item result-box" id="result-three"></div>
@@ -30,6 +31,7 @@
                 </div>
             </div>
         </div>
+        <footer>Footer!</footer>
         <script src="./assets/script.js"></script>
     </div>
 </body>
