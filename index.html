@@ -7,6 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="jumbotron text-center">
+        <h1>DIY Bartender</h1>
+    </header>
+    <div class="container-fluid item-search" style="height: 100%;">
+        <div class="row ">
+            <div class="col-4 search-container">
+                <h2 class="child search-input">Search for a City:</h2>
+                <input id="search-results" class="child" placeholder="Example: Drink Name"></input>
+                <button type="submit" class="child btn btn-primary" id="fetch-button">Submit</button>
+            </div>
+            <div class="col-8 results-container">
+                <div>
+                    <div class="row child">
+                        <div id="search-results">Search Results</div>
+                    </div>
+                    <div class="row child result-box-container">
+                        <div class="item result-box" id="result-one"></div>
+                        <div class="item result-box" id="result-two"></div>
+                        <div class="item result-box" id="result-three"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/script.js"></script>
+    </div>
 </body>
 </html>
