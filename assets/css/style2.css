@@ -1,0 +1,18 @@
+.results-container {
+    background-color: #0e0c0b;
+    align-content: center;
+    margin: 5px;
+}
+
+h3 {
+    background-color: olivedrab;
+    color: #c2ae94;
+    font-weight: bold;
+    text-align: center;
+}
+
+.result-box {
+    color: olivedrab;
+    background-color: #c2ae94;
+    margin: 10px;
+}
