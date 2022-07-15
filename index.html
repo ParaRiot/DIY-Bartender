@@ -2,37 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>DIY Bartender</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="jumbotron text-center">
-        <h1>DIY Bartender</h1>
-    </header>
-    <div class="container item-search" style="height: 100%;">
-        <div class="">
-            <div class="search-container">
-                <h2 class="search-input">Search for a City:</h2>
-                <input id="search-results" placeholder="Example: Drink Name"></input>
-                <button type="submit" class="btn btn-primary" id="fetch-button">Submit</button>
-            </div>
-            <div class="results-container">
-                <div>
-                    <div class="">
-                        <div id="search-results">Search Results</div>
-                    </div>
-                    <div class="row result-box-container">
-                        <div class="item result-box" id="result-one"></div>
-                        <div class="item result-box" id="result-two"></div>
-                        <div class="item result-box" id="result-three"></div>
-                    </div>
-                </div>
-            </div>
+    
+    <!-- Weather Dashboard Header -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5 text-center">DIY Bartender</h1>
         </div>
-        <footer>Footer!</footer>
-        <script src="./assets/script.js"></script>
     </div>
+    
+    <!-- Main Content Container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 searchCol">
+                <!-- Search Form -->
+                <h4>Search for a drink by ingredient:</h4>
+                <div class="search-container mb-3">
+                    <input type="text" class="form-control" id="ingredientInput" placeholder="Ingredient" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="citySearchBtn">
+                            <img src="Assets/search.png" width="20px"/></button>
+                        </div>
+                    </div>
+                    <div class="list-group" id="cityList">
+                      </div>                    
+                </div>
+                <!-- Drink Info -->
+                <div class="col-9">
+                    <div class="card" style="width: 100%;" id="resultsContainer"></div>
+                      <div id="result-box-Container"></div>
+                </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
