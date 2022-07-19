@@ -5,14 +5,21 @@
 }
 
 h3 {
-    background-color: olivedrab;
+    background-color: #365275;
     color: #c2ae94;
     font-weight: bold;
     text-align: center;
 }
 
-.result-box {
-    color: olivedrab;
+.result-box-container {
     background-color: #c2ae94;
     margin: 10px;
+    padding: 4px;
+}
+
+.result-box {
+    color: #c2ae94;
+    background-color: #365275;
+    margin: 10px;
+    padding: 2px;
 }
