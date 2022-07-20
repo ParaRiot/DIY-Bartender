@@ -1,16 +1,62 @@
-html {
-  background: url(../Images/background.jpg);
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    /* line-height: 1; */
 }
 
-header {
-  color: #c2ae94;
-  background-color: #0e0c0b;
-  font-family: "roboto serif", "serif";
+.jumbotron {
+
+    text-align: center;
+    background-color: darkcyan;
+    color: white;
+    display: flex;
+}
+
+.jumbotron h1 {
+    flex: 1;
+}
+.container {
+    /* display: inline-block; */
+    height: 100%;
+    background-color: azure;
+    margin: 15px;
+    padding: 10px;
+    border: 5px, black;
+
 }
 
 .search-container {
-  background-color: #0e0c0b;
+    width: 40%;    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex: 0;
+    order: -1;
 }
+
+#search-results {
+    width: 70%;
+}
+
+.btn {
+    width: 20%;
+    border-left: 1px solid black;
+    background-color: #2b83d6;
+    color: white;
+  }
+  
+  .btn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .results-container {
+    width: 60%;
+  }
+
+  .footer {
+    position: bottom;
+  }
