@@ -15,41 +15,78 @@
 <body class="">
     
     <!-- Dashboard Header -->
-    <div class="container mx-auto p-0 max-w-none h-24">
-        <header class="justify-between p-3 h-24 text-7xl">
+    <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+        <header class="font-bold text-2xl lg\:text-4xl text-white">
             DIY Bartender
         </header>
     </div>
+
+   
     
     <!-- Main Content Container -->
     <div class="container mx-auto mt-5">
-        <div class="grid gap-8 grid-cols-3">
-            <!-- Search Area-->
-            <div class="search-container p-3 align-middle justify-center">
-                <h4 class="justify-center">Search for a drink by ingredient:</h4>
-                <div class="search-container mb-3">
-                    <input type="text" class="form-control" id="ingredientInput" placeholder="Ingredient/Liquor">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="button" id="">
-                            <img src="assets/search.png" width="20px"/>
-                        </button>
-                    </div>
-                </div>
-                <div class="list-group" id="search-results">
-                </div>                    
+      <div class="grid gap-8 grid-cols-3">
+          <!-- Search Area-->
+          <div class="search-container p-3 align-middle justify-center">
+            <div class="mb-3 ml-3 xl:w-96 searchCol col-3">
+              <div class="search-container input-group relative flex items-stretch w-full mb-4">
+                <input type="text" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Ingredient" id="ingredientInput">
+                <button class="btn inline-block px-6 py-2 border-2 border-blue-600 text-white font-medium text-xs leading-tight uppercase rounded bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type="button" id="button-addon3 citySearchBtn">Search</button>
+              </div>
             </div>
-            <!-- Drink Info -->
-            <div id="resultsContainer" class=" col-span-2 p-3 align-middle justify-center">
-                <div class="search-results">
-                    <h3 class="justify-center">Search Results</h3>
-                </div>
-                <div id="result-box-Container" class="grid grid-rows-3">
-                    <!-- dynamically generated info goes here -->
+              <div class="list-group" id="search-results">
+              </div>                    
+          </div>
+          <!-- Drink Info -->
+          <div id="resultsContainer" class=" col-span-2 p-3 align-middle justify-center">
+              <div class="search-results">
+                  <h3 class="justify-center">Search Results</h3>
+              </div>
+              <div id="result-box-Container" class="grid grid-rows-3">
+                  <!-- dynamically generated info goes here -->
+              </div>
+          </div>
+      </div>
+  </div>
+
+     <!--Footer--> 
+    <footer class="bg-[#1a1a1d]">
+        <div class="container mx-auto px-6 pt-10 pb-6">
+            <div class="flex flex-wrap text-white">
+                <div class="w-full md:w-1/4 text-center md:text-left">
+                    <h5 class="uppercase mb-6 font-bold">Links</h5>
+                    <ul class="mb-4">
+                      <li class="mt-2">
+                        <a href="#" class="hover:underline text-white-600 hover:text-orange-500">Coming Soon</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="w-full md:w-1/4 text-center md:text-left">
+                    <h5 class="uppercase mb-6 font-bold">Legal</h5>
+                    <ul class="mb-4">
+                      <li class="mt-2">
+                        <a href="#" class="hover:underline text-white-600 hover:text-orange-500">Coming Soon</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="w-full md:w-1/4 text-center md:text-left">
+                    <h5 class="uppercase mb-6 font-bold">Social</h5>
+                    <ul class="mb-4">
+                      <li class="mt-2">
+                        <a href="#" class="hover:underline text-white-600 hover:text-orange-500">Coming Soon</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="w-full md:w-1/4 text-center md:text-left">
+                    <h5 class="uppercase mb-6 font-bold">Company</h5>
+                    <ul class="mb-4">
+                      <li class="mt-2">
+                        <a href="#" class="hover:underline text-white-600 hover:text-orange-500">Coming Soon</a>
+                      </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
