@@ -1,5 +1,5 @@
 // Constant for youtube API Key
-const youtubeApiKey = 'AIzaSyDwqNTOnesmX68ISLWg0AwyCXPGZWwlpCY'
+const youtubeApiKey = 'AIzaSyChuN6dBugIr8pK0mcxswqnbzdMmS7qjiE'
 
 // Function to display results
 async function displayResultsList(resultData) {
