@@ -4,11 +4,11 @@ body {
     font-size: 16px;
     height: 100;
     display: flex;
-    background-color: #1a1a1d ;
     flex-direction: column;
+    min-height: 100vh;
     /* line-height: 1; */
 }
- .hero {
+ .content-wrapper {
   background-image: url(../Images/background.jpg);
   background-size: cover;
   background-position: center;
@@ -59,14 +59,6 @@ body {
   
   .results-container {
     width: 60%;
-  }
-
-  .footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
   }
 
   .search-container .btn {
