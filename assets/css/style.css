@@ -35,8 +35,7 @@ body {
 
 }
 
-.search-container {
-    width: 40%;    
+.search-container {   
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -70,4 +69,8 @@ body {
     bottom: 0;
     left: 0;
     padding: 1rem;
+  }
+
+  .search-container .btn {
+    width: auto;
   }

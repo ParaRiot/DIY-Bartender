@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 // Based on ingredient input - Cocktail API
 citySearchBtn.onclick = async function getApi(event) {
     var input = document.getElementById('ingredientInput').value;
@@ -31,4 +28,3 @@ async function getData(URL, options) {
         console.log(error);
     }
 }
->>>>>>> main
