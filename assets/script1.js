@@ -3,7 +3,6 @@ const youtubeApiKey = 'AIzaSyDwqNTOnesmX68ISLWg0AwyCXPGZWwlpCY'
 
 // Function to display results
 async function displayResultsList(resultData) {
-
     let resultsContainerDiv = document.getElementById('result-box-Container');
 
     // For loop, stops at 3
@@ -21,10 +20,10 @@ async function displayResultsList(resultData) {
 async function cocktailResultOne(resultData) {
 
     let resultsOneContainerDiv = document.createElement('div');
-    resultsOneContainerDiv.id = "result-one-container";
+    resultsOneContainerDiv.className = "result-box";
 
     let newListOlOne = document.createElement('ol');
-    newListOlOne.id = 'cocktail-info-content-one';
+    newListOlOne.className = 'cocktail-info-content';
 
     // For loop for results data for all three calls, 
     for (var i = 0; i < resultData.ingredients.length; i++) {
@@ -36,7 +35,7 @@ async function cocktailResultOne(resultData) {
     let resultOneHeader = document.createElement('h2');
 
     // Makes header and appends to main results container div
-    resultOneHeader.id = "cocktail-name-one";
+    resultOneHeader.class = "cocktail-name";
     resultOneHeader.textContent = resultData.name;
     resultsOneContainerDiv.appendChild(resultOneHeader);
     resultsOneContainerDiv.appendChild(newListOlOne);
