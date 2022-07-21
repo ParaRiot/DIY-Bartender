@@ -29,7 +29,8 @@ body {
 }
 
 .search-container {
-    width: 40%;    \display: flex;
+    width: 40%;    
+    display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     flex: 0;
