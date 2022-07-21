@@ -64,3 +64,10 @@ body {
   .search-container .btn {
     width: auto;
   }
+
+  @media only screen and (max-width: 1024px) {
+    .search-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
