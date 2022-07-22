@@ -2,7 +2,7 @@
 const youtubeApiKey = 'AIzaSyChuN6dBugIr8pK0mcxswqnbzdMmS7qjiE'
 
 // Function to display results
-async function displayResultsList(resultData) {
+async function displayResultsList(resultData, input) {
     let resultsContainerDiv = document.getElementById('result-box-Container');
 
     // For loop, stops at 3
@@ -14,6 +14,12 @@ async function displayResultsList(resultData) {
         resultsContainerDiv.appendChild(resultsOneContainerDiv);
         resultsOneContainerDiv.appendChild(youtubeDataSrc);
     }
+        
+    // Saves to local storage
+    let pastResults = JSON.parse(localStorage.getItem(input) || "[]");
+    pastResults.push({input:resultData});         
+    localStorage.setItem(input, JSON.stringify(pastResults));
+
 }
 
 // Displays cocktail results data
