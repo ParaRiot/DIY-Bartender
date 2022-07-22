@@ -14,7 +14,6 @@ searchBtn.onclick = async function getApi(event) {
     
     var cocktailURL = 'https://cocktail-by-api-ninjas.p.rapidapi.com/v1/cocktail?name=' + input;
     let resultData = await getData(cocktailURL, options);
-    console.log("this is data", resultData[0].name);
     
     // Activates display function for cocktail name and ingredients list
     await displayResultsList(resultData);

@@ -1,5 +1,5 @@
 // Constant for youtube API Key
-const youtubeApiKey = 'AIzaSyDwqNTOnesmX68ISLWg0AwyCXPGZWwlpCY'
+const youtubeApiKey = 'AIzaSyChuN6dBugIr8pK0mcxswqnbzdMmS7qjiE'
 
 // Function to display results
 async function displayResultsList(resultData) {
@@ -39,6 +39,9 @@ async function cocktailResultOne(resultData) {
     resultOneHeader.textContent = resultData.name;
     resultsOneContainerDiv.appendChild(resultOneHeader);
     resultsOneContainerDiv.appendChild(newListOlOne);
+
+    localStorage.setItem('Search', JSON.stringify(resultData));
+
     return resultsOneContainerDiv;
 }
 
