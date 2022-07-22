@@ -17,7 +17,7 @@ searchBtn.onclick = async function getApi(event) {
     console.log("this is data", resultData[0].name);
     
     // Activates display function for cocktail name and ingredients list
-    await displayResultsList(resultData);
+    await displayResultsList(resultData, input);
 }
 
 // Pulls cocktail random data 
